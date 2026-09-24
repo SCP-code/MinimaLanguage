@@ -1,0 +1,36 @@
+// Minima++ sample (Windows-safe)
+print("== Hello from Minima++ ==");
+
+let x = 10;
+let y = 3;
+print("x + y =", x + y);
+print("x * y =", x * y, "x % y =", x % y);
+
+if x > y {
+    print("x is greater than y");
+} else {
+    print("x is not greater than y");
+}
+
+let i = 0;
+while i < 3 {
+    print("while i =", i);
+    i = i + 1;
+}
+
+for k in 0..5 {
+    print("for k =", k);
+}
+
+let arr = [1, 2, 3];
+print("arr[1] before =", arr[1]);
+arr[1] = 42;
+print("arr[1] after  =", arr[1]);
+
+let user = { name: "Alice", age: 25 };
+print("user name is", user["name"]);
+user["age"] = 26;
+print("user age is", user["age"]);
+
+func add(a, b) { return a + b; }
+print("add(7,5) =>", add(7,5));
